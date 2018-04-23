@@ -37,7 +37,7 @@ public:
         
         set<vector<int>>r;
         
-        for(int i = currentIndex + 1; i < nums.size(); i++) {          
+        for(int i = currentIndex + 1; i < nums.size(); i++) {
             
             int n = nums[i];
             int complement = target - n;

@@ -19,7 +19,7 @@ class Solution {
 private:
     vector<vector<int>> results;
 public:
-     vector<vector<int>> threeSum(vector<int>& nums, int target) {
+     vector<vector<int>> threeSum(vector<int>& nums) {
          if(nums.size()<3)
              return results;
          sort(nums.begin(), nums.end(), less<int>());
@@ -30,7 +30,7 @@ public:
                  int k = (int)nums.size() -1;
                  
                  while(j < k) {
-                     if (nums[i] + nums[j] + nums[k] == target) {
+                     if (nums[i] + nums[j] + nums[k] == 0) {
                          results.push_back({nums[i], nums[j], nums[k]});
                          j++;
                          k--;
@@ -42,7 +42,7 @@ public:
                          while(j<k && nums[k] == nums[k+1]) {
                              k--;
                          }
-                     } else if (nums[i] + nums[j] + nums[k] < target) {
+                     } else if (nums[i] + nums[j] + nums[k] < 0) {
                          j++;
                      } else {
                          k--;
