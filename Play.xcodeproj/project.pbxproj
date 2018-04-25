@@ -14,6 +14,8 @@
 		3AB87BA12087ECC50078772C /* 3SumClosest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AB87B9F2087ECC50078772C /* 3SumClosest.cpp */; };
 		3AB87BA4208BE8150078772C /* FaceBookHightestPopulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AB87BA2208BE8150078772C /* FaceBookHightestPopulation.cpp */; };
 		3AB87BA7208D519A0078772C /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AB87BA5208D519A0078772C /* Random.cpp */; };
+		3AB87BAA208D91570078772C /* 3SumClosestInternet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AB87BA8208D91570078772C /* 3SumClosestInternet.cpp */; };
+		3AC833BF208EFD2F00E64A08 /* FacebookInterviewQuestions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AC833BD208EFD2F00E64A08 /* FacebookInterviewQuestions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,10 @@
 		3AB87BA3208BE8150078772C /* FaceBookHightestPopulation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceBookHightestPopulation.hpp; sourceTree = "<group>"; };
 		3AB87BA5208D519A0078772C /* Random.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
 		3AB87BA6208D519A0078772C /* Random.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Random.hpp; sourceTree = "<group>"; };
+		3AB87BA8208D91570078772C /* 3SumClosestInternet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 3SumClosestInternet.cpp; sourceTree = "<group>"; };
+		3AB87BA9208D91570078772C /* 3SumClosestInternet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = 3SumClosestInternet.hpp; sourceTree = "<group>"; };
+		3AC833BD208EFD2F00E64A08 /* FacebookInterviewQuestions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FacebookInterviewQuestions.cpp; sourceTree = "<group>"; };
+		3AC833BE208EFD2F00E64A08 /* FacebookInterviewQuestions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FacebookInterviewQuestions.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 		3AB87B8320854FC80078772C = {
 			isa = PBXGroup;
 			children = (
+				3AC833BD208EFD2F00E64A08 /* FacebookInterviewQuestions.cpp */,
+				3AC833BE208EFD2F00E64A08 /* FacebookInterviewQuestions.hpp */,
 				3AB87B8E20854FC80078772C /* Play */,
 				3AB87B8D20854FC80078772C /* Products */,
 			);
@@ -88,6 +96,8 @@
 				3AB87BA02087ECC50078772C /* 3SumClosest.hpp */,
 				3AB87BA5208D519A0078772C /* Random.cpp */,
 				3AB87BA6208D519A0078772C /* Random.hpp */,
+				3AB87BA8208D91570078772C /* 3SumClosestInternet.cpp */,
+				3AB87BA9208D91570078772C /* 3SumClosestInternet.hpp */,
 			);
 			path = Play;
 			sourceTree = "<group>";
@@ -154,7 +164,9 @@
 				3AB87B9B2085D34B0078772C /* 3SumNonRecursive.cpp in Sources */,
 				3AB87BA4208BE8150078772C /* FaceBookHightestPopulation.cpp in Sources */,
 				3AB87B9E208681A50078772C /* 3SumInternetSolution.cpp in Sources */,
+				3AB87BAA208D91570078772C /* 3SumClosestInternet.cpp in Sources */,
 				3AB87BA7208D519A0078772C /* Random.cpp in Sources */,
+				3AC833BF208EFD2F00E64A08 /* FacebookInterviewQuestions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +285,11 @@
 		3AB87B9420854FC80078772C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPV7ESEG7B;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -282,8 +297,11 @@
 		3AB87B9520854FC80078772C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPV7ESEG7B;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
