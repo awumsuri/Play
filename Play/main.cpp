@@ -60,10 +60,9 @@ int main(int argc, const char * argv[]) {
     //s.threeSumClosest(a,82);
     //s.threeSumClosest(a, 1);
     t = clock() - t;
-    //print(s.threeSumClosest(a,82));
     
-   
-   cout << f.OneEditAway("sri", "suri") << "\n";
+    cout << f.OneEditAway("cat", "cats") << "\n";
+    print(f.spirial(5));
     
     return 0;
 }

@@ -36,18 +36,19 @@ private:
     bool checkOneEdit(string s, string t) {
         
         int diffCount = 0;
-        bool isOneEditAway = false;
-        
+       
         for(int i = 0; i < s.size(); i++) {
+            
             if(s[i] != t[i]) {
                 diffCount++;
-                if (diffCount > 1) return false;
-                isOneEditAway = true;
-            }
+                if (diffCount > 1) {
+                  return false;
+                }
+            }           
             
         }
         
-        return isOneEditAway;
+        return true;
     }
     
     
@@ -63,14 +64,16 @@ public:
         }
         
         //Add Padding
-        
         vector<string> order = orderStrings(s, t);
         string larger = order[0];
         string smaller = order[1];
         string paddingS;
+        paddingS.reserve(larger.size());
+        
         int k = 0;
         
         for(int i = 0; i < larger.size(); i++) {
+            
             if(larger[i] == smaller[k]) {
                 paddingS.insert(i, 1,smaller[k]);
                 k++;
@@ -78,12 +81,10 @@ public:
                 paddingS.insert(i, 1, ' ');
                 
             }
-             cout << "paddingS:" << paddingS << "\n";
+        
         }
         
-        cout << "paddingS:" << paddingS << "\n";
-        
-         return checkOneEdit(paddingS, order[0]);
+        return checkOneEdit(paddingS, order[0]);
         
     }
     
@@ -139,7 +140,7 @@ public:
             
         }        
         
-        for(int n = 0; n <= sCount; n++) {
+        for(int n = 1; n <= sCount; n++) {
             pair p = map[n];
             result[p.x][p.y] = p.value;
         }
