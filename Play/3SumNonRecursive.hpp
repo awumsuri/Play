@@ -49,7 +49,7 @@ public:
                 
                 if (map.find(complement) != map.end() && map.at(complement) != j && map.at(complement) != i) {
                     vector<int>r = {nums[map.at(complement)], n1, n2};
-                    sort(r.begin(), r.end(), less_equal<>());                    
+                    sort(r.begin(), r.end(), less_equal<int>());
                     results.insert(r);
                 }
             }            
